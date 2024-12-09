@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-12-09T22:59:46.824948" rpa="false" schemaversion="5">
+<suite id="s1" name="Create Account" source="C:\Users\waleb\PycharmProjects\Robotframework_Browser\Create_Account.robot">
+<test id="s1-t1" name="Verify User can create account successfully" line="10">
+<kw name="Navigate to create account page" owner="Project_Keywords">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-12-09T22:59:48.962596" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\waleb\\PycharmProjects\\Robotframework_Browser\\log\\browser\\traces\\79c63235-556b-4996-95e4-b3b98fcbfd8a"}</msg>
+<msg time="2024-12-09T22:59:49.520984" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\waleb\\PycharmProjects\\Robotframework_Browser\\log\\browser\\traces\\79c63235-556b-4996-95e4-b3b98fcbfd8a"}</msg>
+<arg>Chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-12-09T22:59:48.961599" elapsed="0.559385"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-12-09T22:59:52.638358" level="INFO">Successfully initialized new page object and opened url: https://magento.softwaretestingboard.com/customer/account/create/</msg>
+<msg time="2024-12-09T22:59:52.638358" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-12-09T22:59:49.521981" elapsed="3.116377"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T22:59:52.642353" level="INFO">Clicks the element 'xpath=//button[@aria-label="Consent"]'.</msg>
+<arg>${CONSENT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T22:59:52.639355" elapsed="0.596406"/>
+</kw>
+<status status="PASS" start="2024-12-09T22:59:48.960603" elapsed="4.275158"/>
+</kw>
+<kw name="Enter user first name and last name" owner="Project_Keywords">
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-12-09T22:59:53.238753" level="INFO">${firstname} = Valerie</msg>
+<var>${firstname}</var>
+<status status="PASS" start="2024-12-09T22:59:53.237756" elapsed="0.000997"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.239751" level="INFO">Valerie</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.238753" elapsed="0.000998"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.240748" level="INFO">${firstname} = Valerie</msg>
+<arg>${firstname}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.240748" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-12-09T22:59:53.242743" level="INFO">Fills the text 'Valerie' in the given field.</msg>
+<arg>${FIRST_NAME_BOX}</arg>
+<arg>${firstname}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.241746" elapsed="0.245343"/>
+</kw>
+<kw name="Last Name" owner="FakerLibrary">
+<msg time="2024-12-09T22:59:53.489085" level="INFO">${lastname} = Murphy</msg>
+<var>${lastname}</var>
+<status status="PASS" start="2024-12-09T22:59:53.488088" elapsed="0.000997"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.490081" level="INFO">Murphy</msg>
+<arg>${lastname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.489085" elapsed="0.001994"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.492076" level="INFO">${lastname} = Murphy</msg>
+<arg>${lastname}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.491079" elapsed="0.000997"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-12-09T22:59:53.494071" level="INFO">Fills the text 'Murphy' in the given field.</msg>
+<arg>${LAST_NAME_BOX}</arg>
+<arg>${lastname}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.493074" elapsed="0.029919"/>
+</kw>
+<status status="PASS" start="2024-12-09T22:59:53.236759" elapsed="0.286234"/>
+</kw>
+<kw name="Enter user email address" owner="Project_Keywords">
+<kw name="Email" owner="FakerLibrary">
+<msg time="2024-12-09T22:59:53.525986" level="INFO">${email} = enorman@example.org</msg>
+<var>${email}</var>
+<status status="PASS" start="2024-12-09T22:59:53.523991" elapsed="0.001995"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.526983" level="INFO">enorman@example.org</msg>
+<arg>${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.525986" elapsed="0.000997"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.527980" level="INFO">${email} = enorman@example.org</msg>
+<arg>${email}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.527980" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-12-09T22:59:53.529975" level="INFO">Fills the text 'enorman@example.org' in the given field.</msg>
+<arg>${EMAIL_ACCT_CREATE}</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.528978" elapsed="0.026928"/>
+</kw>
+<status status="PASS" start="2024-12-09T22:59:53.522993" elapsed="0.032913"/>
+</kw>
+<kw name="Enter user password and confirm password" owner="Project_Keywords">
+<kw name="Password" owner="FakerLibrary">
+<msg time="2024-12-09T22:59:53.557900" level="INFO">${password} = ^6gJwQhg+I</msg>
+<var>${password}</var>
+<doc>Generate a random password of the specified ``length``.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.557900" elapsed="0.000997"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.559895" level="INFO">^6gJwQhg+I</msg>
+<arg>${password}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.558897" elapsed="0.000998"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.560892" level="INFO">${password} = ^6gJwQhg+I</msg>
+<arg>${password}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.559895" elapsed="0.000997"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-12-09T22:59:53.562886" level="INFO">Fills the text '^6gJwQhg+I' in the given field.</msg>
+<arg>${PASSWRD_ACCT_CREATE}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.561890" elapsed="0.037898"/>
+</kw>
+<kw name="Password" owner="FakerLibrary">
+<msg time="2024-12-09T22:59:53.602790" level="INFO">${password} = *7l4VBsU*@</msg>
+<var>${password}</var>
+<doc>Generate a random password of the specified ``length``.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.600786" elapsed="0.002004"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.604777" level="INFO">*7l4VBsU*@</msg>
+<arg>${password}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.603778" elapsed="0.000999"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-12-09T22:59:53.606769" level="INFO">${password} = *7l4VBsU*@</msg>
+<arg>${password}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.605772" elapsed="0.000997"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-12-09T22:59:53.609760" level="INFO">Fills the text '*7l4VBsU*@' in the given field.</msg>
+<arg>${PSWRD_ACCT_CREATE_COM}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.607774" elapsed="0.154579"/>
+</kw>
+<status status="PASS" start="2024-12-09T22:59:53.556903" elapsed="0.205450"/>
+</kw>
+<kw name="Create account and assert that account has been created successfully" owner="Project_Keywords">
+<kw name="Click" owner="Browser">
+<msg time="2024-12-09T22:59:53.765344" level="INFO">Clicks the element 'xpath=//button[@title="Create an Account"]'.</msg>
+<arg>${CREATE_ACCOUNT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-09T22:59:53.764348" elapsed="0.206483"/>
+</kw>
+<status status="PASS" start="2024-12-09T22:59:53.763351" elapsed="0.208477"/>
+</kw>
+<status status="PASS" start="2024-12-09T22:59:48.954624" elapsed="5.017204"/>
+</test>
+<status status="PASS" start="2024-12-09T22:59:46.829929" elapsed="7.522880"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Create Account">Create Account</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

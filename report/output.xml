@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-12-09T22:08:46.671503" rpa="false" schemaversion="5">
+<suite id="s1" name="Create Account" source="C:\Users\waleb\PycharmProjects\Robotframework_Browser\Create_Account.robot">
+<test id="s1-t1" name="Verify User can create account successfully" line="11">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-12-09T22:08:48.822379" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\waleb\\PycharmProjects\\Robotframework_Browser\\report\\browser\\traces\\256f508f-de5d-4ae8-bcd5-656a136b533e"}</msg>
+<msg time="2024-12-09T22:08:49.331444" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\waleb\\PycharmProjects\\Robotframework_Browser\\report\\browser\\traces\\256f508f-de5d-4ae8-bcd5-656a136b533e"}</msg>
+<arg>Chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-12-09T22:08:48.821383" elapsed="0.510061"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-12-09T22:08:52.561288" level="INFO">Successfully initialized new page object and opened url: https://magento.softwaretestingboard.com/</msg>
+<msg time="2024-12-09T22:08:52.561288" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://magento.softwaretestingboard.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-12-09T22:08:49.360366" elapsed="3.201920"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-12-09T22:09:02.984835" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-09T22:09:02.984835" level="INFO">See also file:///C:/Users/waleb/PycharmProjects/Robotframework_Browser/report/playwright-log.txt for additional details.</msg>
+<msg time="2024-12-09T22:09:02.984835" level="FAIL">Error: locator.waitFor: Unsupported token "@aria-label" while parsing selector "xpath: //button[@aria-label="Consent"]"
+Call log:
+  [2m- waiting for xpath: //button[@aria-label="Consent"] to be visible[22m
+</msg>
+<arg>xpath: //button[@aria-label="Consent"]</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2024-12-09T22:08:52.562286" elapsed="10.429533">Error: locator.waitFor: Unsupported token "@aria-label" while parsing selector "xpath: //button[@aria-label="Consent"]"
+Call log:
+  [2m- waiting for xpath: //button[@aria-label="Consent"] to be visible[22m
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>xpath: //button[@aria-label="Consent"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:02.992828" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>xpath://ul[@class="header links"]/li[3]/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:02.994453" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<var>${firstname}</var>
+<status status="NOT RUN" start="2024-12-09T22:09:02.995498" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:02.996335" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${firstname}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:02.997119" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id="firstname"</arg>
+<arg>${firstname}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:02.997910" elapsed="0.000000"/>
+</kw>
+<kw name="Last Name" owner="FakerLibrary">
+<var>${lastname}</var>
+<status status="NOT RUN" start="2024-12-09T22:09:02.999113" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${lastname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:02.999857" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${lastname}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.000551" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id="lastname"</arg>
+<arg>${lastname}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.001252" elapsed="0.000000"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<var>${email}</var>
+<status status="NOT RUN" start="2024-12-09T22:09:03.001947" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.001947" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${email}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.002957" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id="email_address"</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.003945" elapsed="0.000000"/>
+</kw>
+<kw name="Password" owner="FakerLibrary">
+<var>${password}</var>
+<doc>Generate a random password of the specified ``length``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.005686" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${password}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.006436" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${password}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.007140" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id="password"</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.007839" elapsed="0.000000"/>
+</kw>
+<kw name="Password" owner="FakerLibrary">
+<var>${password}</var>
+<doc>Generate a random password of the specified ``length``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.008529" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${password}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.009231" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<arg>${password}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.009911" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id="password-confirmation"</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.010596" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>xpath://button[@title="Create an Account"]/span</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-12-09T22:09:03.011727" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-12-09T22:08:48.813375" elapsed="14.199044">Error: locator.waitFor: Unsupported token "@aria-label" while parsing selector "xpath: //button[@aria-label="Consent"]"
+Call log:
+  [2m- waiting for xpath: //button[@aria-label="Consent"] to be visible[22m
+</status>
+</test>
+<status status="FAIL" start="2024-12-09T22:08:46.674527" elapsed="16.460144"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Create Account">Create Account</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
